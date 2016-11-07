@@ -83,9 +83,7 @@ sector = list(data_close_vol.keys())[1]
 data   = data_close_vol[sector]
 names  = sector_tickers_subset[sector]
 
-"""
-Put %s placeholders for ANY data type inserted from Python into PostgreSQL
-"""
+
 
 #WRITE DATA TO THE DATABASE
 for ticker, stock in zip(names,data):
