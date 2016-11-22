@@ -19,7 +19,7 @@ from datetime import datetime
 
 
 def read(query):
-    connect_str = "dbname='stocks' user='postgres' host='localhost' password='eccehomo1'"
+    connect_str = "dbname='stocks' user='postgres' host='localhost' password=''"
     conn   = psycopg2.connect(connect_str)
     cursor = conn.cursor() 
     cursor.execute(query)
@@ -74,7 +74,7 @@ data_close_vol = get_data(sector_tickers_subset,start,end)
 
 
 #CREATE THE CONNECTION
-connect_str = "dbname='stocks' user='postgres' host='localhost' password='eccehomo1'"
+connect_str = "dbname='stocks' user='postgres' host='localhost' password=''"
 conn        = psycopg2.connect(connect_str)
 cursor      = conn.cursor() 
 
